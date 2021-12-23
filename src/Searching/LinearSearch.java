@@ -12,7 +12,8 @@ public class LinearSearch {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
-        System.out.println(linearSearch(arr, 4));
+        int[] arr = {4, 3, 1, -7, 89, 0, -19};
+        int target = 0;
+        System.out.println(linearSearch(arr, target));
     }
 }
