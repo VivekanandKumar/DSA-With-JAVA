@@ -12,11 +12,7 @@ public class PalindromeNumberFunction {
             num = num / 10;
             result = result * 10 + temp;
         }
-        if (result == number) {
-            return true;
-        } else {
-            return false;
-        }
+        return result == number;
     }
 
     public static void main(String[] args) {

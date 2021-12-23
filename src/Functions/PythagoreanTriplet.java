@@ -8,11 +8,7 @@ A Pythagorean triplet is when the sum of the square of two number is equal to th
 public class PythagoreanTriplet {
 
     public static boolean isTriplet(int a, int b, int c) {
-        if ((Math.pow(a, 2) + Math.pow(b, 2)) == (Math.pow(c, 2))) {
-            return true;
-        } else {
-            return false;
-        }
+        return (Math.pow(a, 2) + Math.pow(b, 2)) == (Math.pow(c, 2));
     }
 
     public static void main(String[] args) {

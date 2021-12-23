@@ -19,7 +19,7 @@ public class StudentsGrade {
             grade = "BC";
         } else if (marks > 50 && marks <= 60) {
             grade = "CD";
-        } else if (marks > 40 && marks <= 50) {
+        } else if (marks <= 50) {
             grade = "DD";
         }
         return grade;
