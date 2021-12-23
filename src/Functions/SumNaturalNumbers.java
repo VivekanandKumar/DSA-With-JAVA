@@ -14,7 +14,7 @@ public class SumNaturalNumbers {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter a natural number: ");
+        System.out.println("Try to sum N natural numbers !!\nEnter a natural number: ");
         int n = in.nextInt();
         if (n == 0) {
             System.out.println("0 is not a natural number!!");
