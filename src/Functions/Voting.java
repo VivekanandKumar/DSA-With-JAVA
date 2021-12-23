@@ -13,6 +13,7 @@ public class Voting {
     }
 
     public static void main(String[] args) {
-        canVote(4);
+        int age = 4;
+        canVote(age);
     }
 }
