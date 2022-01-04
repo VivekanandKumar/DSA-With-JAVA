@@ -1,4 +1,5 @@
 package Searching;
+
 /*
 Ceiling Number  : smallest Number in an array that is greater OR equal to the target number .
 arr[] = {2, 3, 5, 9, 14, 16, 18};
@@ -8,12 +9,12 @@ target = 4;
  */
 public class CeilingNumber {
 
-//    return the index of ceiling number;
+    //    return the index of ceiling number;
     static int ceiling(int[] arr, int target) {
 
 
         // No ceiling found;
-        if (target > arr[arr.length-1])
+        if (target > arr[arr.length - 1])
             return -1;
 
         int start = 0;
