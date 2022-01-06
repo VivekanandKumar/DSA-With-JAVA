@@ -6,8 +6,6 @@ public class BinarySearch {
         int start = 0;
         int end = arr.length - 1;
 
-        if (target > arr[end])
-            return -1;
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
@@ -22,8 +20,8 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 7, 9, 19, 33, 46, 78, 100};
-        int target = 100;
+        int[] arr = {3, 1};
+        int target = 4;
         System.out.println(search(arr, target));
     }
 }

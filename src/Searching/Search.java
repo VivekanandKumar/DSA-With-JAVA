@@ -2,21 +2,27 @@ package Searching;
 
 public class Search {
 
-    static int search(int[] arr, int target) {
-        boolean notFound = true;
-        int index = 0;
-        while (notFound) {
-            if (arr[index] == target)
-                notFound = false;
-            else
-                index++;
+    static int findSqrt(int x) {
+        int start = 0;
+        int end = x / 2;
+        int ans = 0;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+
+            if (mid * mid > x)
+                end = mid - 1;
+            else if (mid * mid < x) {
+                start = mid + 1;
+                ans = mid;
+            } else
+                return mid;
         }
-        return index;
+        return ans;
     }
 
     public static void main(String[] args) {
-        int[] arr = {2, 3, 4, 5, 7, 9, 10};
-        int target = 5;
-        System.out.println(search(arr, target));
+        System.out.println(findSqrt(1000000000));
+        System.out.println(Math.sqrt(1000000000));
     }
 }
