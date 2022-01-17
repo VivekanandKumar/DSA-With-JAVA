@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class SearchIn2DArray {
     static int[] search(int[][] arr, int target) {
         int row = 0;
-        int col = arr.length - 1;
+        int col = arr[row].length - 1;
 
         while (row < arr.length && col >= 0) {
             if (arr[row][col] == target)
@@ -26,7 +26,7 @@ public class SearchIn2DArray {
                 {28, 29, 37, 49},
                 {33, 34, 38, 50}
         };
-        int target = 29;
+        int target = 20;
         System.out.println(Arrays.toString(search(arr, target)));
     }
 }
