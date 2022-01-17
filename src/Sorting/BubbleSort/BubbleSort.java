@@ -4,15 +4,19 @@ import java.util.Arrays;
 
 public class BubbleSort {
 
+    //swap the array elements.
+    static void swap(int[] arr, int x, int y) {
+        int temp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = temp;
+    }
 
     static void bubbleSort(int[] arr) {
         boolean swapped = false;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 1; j < arr.length - i; j++) {
                 if (arr[j - 1] > arr[j]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j - 1];
-                    arr[j - 1] = temp;
+                    swap(arr, j, j - 1);
                     swapped = true;
                 }
             }
@@ -22,7 +26,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5, 4, 3, 2, 1};
+        int[] arr = {};
         bubbleSort(arr);
         System.out.println(Arrays.toString(arr));
     }
