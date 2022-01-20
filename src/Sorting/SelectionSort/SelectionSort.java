@@ -16,10 +16,10 @@ public class SelectionSort {
     }
 
     //swap the array elements.
-    static void swap(int[] arr, int x, int y) {
-        int temp = arr[x];
-        arr[x] = arr[y];
-        arr[y] = temp;
+    static void swap(int[] arr, int i, int j) {
+        int temp = arr[j];
+        arr[j] = arr[i];
+        arr[i] = temp;
     }
 
     static void sort(int[] arr) {
