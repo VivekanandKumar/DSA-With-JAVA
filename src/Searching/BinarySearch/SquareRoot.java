@@ -1,4 +1,4 @@
-package Searching;
+package Searching.BinarySearch;
 //  https://leetcode.com/problems/sqrtx/
 public class SquareRoot {
     static int mySqrt(int x) {
