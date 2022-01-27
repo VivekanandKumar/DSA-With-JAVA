@@ -1,5 +1,5 @@
 package Searching.BinarySearch;
-
+//https://leetcode.com/problems/binary-search/
 public class BinarySearch {
 
     static int search(int[] arr, int target) {

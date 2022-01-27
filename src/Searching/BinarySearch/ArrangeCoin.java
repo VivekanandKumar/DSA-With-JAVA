@@ -8,7 +8,7 @@ public class ArrangeCoin {
         System.out.println(coin(9));
     }
 
-    private static int coin(int i) {
+    private static int coin(int num) {
 //      O(1) time complexity.
 //        return (int)(Math.sqrt(2*(long)i + 0.25 ) - 0.5 );
 
@@ -16,11 +16,11 @@ public class ArrangeCoin {
 
 
         long start = 1;
-        long end = i;
+        long end = num;
         while (start <= end){
             long mid = start + (end-start)/2;
             long ans = mid*(mid+1)/2;
-            if (ans <= i){
+            if (ans <= num){
                 start = mid + 1;
             }
             else
