@@ -1,5 +1,6 @@
 package Searching.BinarySearch;
 //https://leetcode.com/problems/fair-candy-swap/
+
 import java.util.Arrays;
 
 public class FairCandySwap {

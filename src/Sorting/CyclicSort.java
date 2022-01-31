@@ -1,4 +1,4 @@
-package Sorting.CyclicSort;
+package Sorting;
 
 import java.util.Arrays;
 //cyclic sort is helpful when the array contain numbers from 1 to n and not contain duplicate elements.;
