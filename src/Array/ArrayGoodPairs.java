@@ -13,20 +13,21 @@ so, there are 3 possible pairs .
  */
 public class ArrayGoodPairs {
 
-    static int goodPair(int[] arr){
+    static int goodPair(int[] arr) {
         int pair = 0;
-        for(int i=0;i<arr.length;i++){
-            for(int j=i;j<arr.length;j++){
-                if(i<j && arr[i] == arr[j]){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                if (i < j && arr[i] == arr[j]) {
                     pair++;
-                    System.out.println(i+" , "+j);
+                    System.out.println(i + " , " + j);
                 }
             }
         }
-        return  pair;
+        return pair;
     }
+
     public static void main(String[] args) {
-        int[] arr = {1,1,3,1,0,8};
+        int[] arr = {1, 1, 3, 1, 0, 8};
         System.out.println(goodPair(arr));
     }
 }

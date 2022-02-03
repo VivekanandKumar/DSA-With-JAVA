@@ -1,7 +1,7 @@
 package Searching.BinarySearch;
+
 //https://leetcode.com/problems/arranging-coins/submissions/
 public class ArrangeCoin {
-
 
 
     public static void main(String[] args) {
@@ -17,15 +17,14 @@ public class ArrangeCoin {
 
         long start = 1;
         long end = num;
-        while (start <= end){
-            long mid = start + (end-start)/2;
-            long ans = mid*(mid+1)/2;
-            if (ans <= num){
+        while (start <= end) {
+            long mid = start + (end - start) / 2;
+            long ans = mid * (mid + 1) / 2;
+            if (ans <= num) {
                 start = mid + 1;
-            }
-            else
+            } else
                 end = mid - 1;
         }
-        return (int)end;
+        return (int) end;
     }
 }

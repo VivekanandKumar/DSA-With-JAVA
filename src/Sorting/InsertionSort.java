@@ -1,4 +1,5 @@
 package Sorting;
+
 import java.util.Arrays;
 
 public class InsertionSort {
@@ -13,11 +14,13 @@ public class InsertionSort {
             }
         }
     }
+
     private static void swap(int[] arr, int j, int i) {
         int temp = arr[j];
         arr[j] = arr[i];
         arr[i] = temp;
     }
+
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 0, -9};
         sort(arr);

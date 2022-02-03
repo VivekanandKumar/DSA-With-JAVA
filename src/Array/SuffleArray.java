@@ -20,7 +20,7 @@ public class SuffleArray {
 
     public static void main(String[] args) {
         int n = 3;
-        int[] arr = { 4, 2, 7, 3, 9, 3 };
+        int[] arr = {4, 2, 7, 3, 9, 3};
         if (arr.length % 2 == 1) {
             System.out.println("Array size must be of size 2n");
         } else {

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class UniqueIntSumZero {
 
-    static int[] uniqueSum(int n){
+    static int[] uniqueSum(int n) {
         int[] answer = new int[n];
         if (n % 2 == 0) {
             for (int i = 1, j = 0; i <= n / 2; i++, j += 2) {
@@ -21,6 +21,7 @@ public class UniqueIntSumZero {
         }
         return answer;
     }
+
     public static void main(String[] args) {
         int n = 5;
         System.out.println(Arrays.toString(uniqueSum(n)));

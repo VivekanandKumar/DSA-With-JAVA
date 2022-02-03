@@ -20,7 +20,7 @@ public class GreatestNumCandies {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 3, 10, 1, 6, 4, 11 };
-        System.out.println(kids(arr, arr.length/2));
+        int[] arr = {3, 10, 1, 6, 4, 11};
+        System.out.println(kids(arr, arr.length / 2));
     }
 }

@@ -22,14 +22,15 @@ public class MaxMinNumber {
             return c;
         }
     }
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter three numbers: ");
         int a = in.nextInt();
         int b = in.nextInt();
         int c = in.nextInt();
-        System.out.println(maxNumber(a, b, c)+" is maximum");
-        System.out.println(minNumber(a, b, c)+" is minimum");
+        System.out.println(maxNumber(a, b, c) + " is maximum");
+        System.out.println(minNumber(a, b, c) + " is minimum");
         in.close();
     }
 }

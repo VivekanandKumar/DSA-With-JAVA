@@ -1,7 +1,8 @@
 package Searching.BinarySearch;
+
 //https://leetcode.com/problems/search-insert-position/
 public class SearchInsertPos {
-    static int search(int[] arr,int target) {
+    static int search(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
 
@@ -19,8 +20,8 @@ public class SearchInsertPos {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,6,8,10};
+        int[] arr = {1, 2, 3, 6, 8, 10};
         int target = 4;
-        System.out.println(search(arr,target));
+        System.out.println(search(arr, target));
     }
 }

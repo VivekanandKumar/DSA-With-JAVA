@@ -38,12 +38,13 @@ public class LuckyNumberMatrix {
         }
         return answer;
     }
-        public static void main (String[] args){
-            int[][] arr = {
-                    {10, 4, 2},
-                    {3, 8, 7},
-                    {16, 17, 12}
-            };
-            System.out.println(findLuckyNumber(arr));
-        }
+
+    public static void main(String[] args) {
+        int[][] arr = {
+                {10, 4, 2},
+                {3, 8, 7},
+                {16, 17, 12}
+        };
+        System.out.println(findLuckyNumber(arr));
     }
+}

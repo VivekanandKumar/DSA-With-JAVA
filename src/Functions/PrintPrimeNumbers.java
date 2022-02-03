@@ -8,7 +8,7 @@ public class PrintPrimeNumbers {
         String primeNumbers = "";
         for (int i = a; i <= b; i++) {
             if (PrimeNumberFunction.isPrime(i)) { // used pre defined function in conditions and loops folder.
-                primeNumbers += String.valueOf(i) + " ";
+                primeNumbers += i + " ";
             }
         }
         return primeNumbers;

@@ -37,7 +37,7 @@ public class ArrayExamples {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 1, 1 };
+        int[] arr = {1, 2, 1, 1};
 
         if (arrayPalindrome(arr)) {
             System.out.println("Array is palindrome");

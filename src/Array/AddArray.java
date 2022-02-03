@@ -18,25 +18,26 @@ Constraint :
  */
 public class AddArray {
 
-    static List<Integer> addArray(int[] arr,int k){
+    static List<Integer> addArray(int[] arr, int k) {
         List<Integer> answer = new ArrayList<>();
-        int i = arr.length-1;
-        while(i >=0 || k > 0){
-            if(i >=0){
-                answer.add((arr[i] + k)%10);
-                k = (arr[i]+k) / 10;
-            }else{
-                answer.add(k%10);
-                k = k/10;
+        int i = arr.length - 1;
+        while (i >= 0 || k > 0) {
+            if (i >= 0) {
+                answer.add((arr[i] + k) % 10);
+                k = (arr[i] + k) / 10;
+            } else {
+                answer.add(k % 10);
+                k = k / 10;
             }
             i--;
         }
         Collections.reverse(answer);
         return answer;
     }
+
     public static void main(String[] args) {
-        int[] arr = {9,9,9};
-        int k =8;
-        System.out.println(addArray(arr,k));
+        int[] arr = {9, 9, 9};
+        int k = 8;
+        System.out.println(addArray(arr, k));
     }
 }

@@ -1,4 +1,5 @@
 package Searching.BinarySearch;
+
 //  Search in rotated sorted array with distinct value(no duplicate values);
 public class SearchInRotatedArray {
 
@@ -22,13 +23,13 @@ public class SearchInRotatedArray {
 
     static int findPivot(int[] arr) {
         int start = 0;
-        int end = arr.length-1;
+        int end = arr.length - 1;
         while (start <= end) {
 //            this will execute when duplicate elements present in the start and end of an array;
 //            then it will ignore the duplicate elements
-            while(start < end && arr[start] == arr[start+1])
+            while (start < end && arr[start] == arr[start + 1])
                 start++;
-            while(start < end && arr[end] == arr[end-1])
+            while (start < end && arr[end] == arr[end - 1])
                 end--;
 //            till here
             int mid = start + (end - start) / 2;
@@ -43,6 +44,7 @@ public class SearchInRotatedArray {
         }
         return -1;
     }
+
     static int binarySearch(int[] arr, int target, int start, int end) {
 
         while (start <= end) {

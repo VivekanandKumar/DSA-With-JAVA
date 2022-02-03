@@ -1,4 +1,5 @@
 package Searching.BinarySearch;
+
 //https://leetcode.com/problems/binary-search/
 public class BinarySearch {
 
