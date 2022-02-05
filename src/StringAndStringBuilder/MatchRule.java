@@ -1,11 +1,10 @@
-package Array;
+package StringAndStringBuilder;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 //https://leetcode.com/problems/count-items-matching-a-rule/
-public class ItemMatchesRule {
-
+public class MatchRule {
     static int matchRule(List<List<String>> list, String ruleKey, String ruleValue) {
         int count = 0;
         int choice = switch (ruleKey) {
@@ -21,8 +20,9 @@ public class ItemMatchesRule {
         }
         return count;
     }
-
     public static void main(String[] args) {
+        String ruleKey ="name";
+        String ruleValue = "lenovo";
         List<List<String>> list = new ArrayList<>();
         List<String> l1 = Arrays.asList("phone", "blue", "pixel");
         List<String> l2 = Arrays.asList("computer", "silver", "lenovo");
@@ -31,10 +31,8 @@ public class ItemMatchesRule {
         list.add(l2);
         list.add(l3);
 
-        String ruleKey = "type";
-        String ruleValue = "phone";
-
-        System.out.println(matchRule(list, ruleKey, ruleValue));
+        System.out.println(matchRule(list,ruleKey,ruleValue));
 
     }
+
 }
