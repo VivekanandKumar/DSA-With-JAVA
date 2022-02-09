@@ -3,6 +3,7 @@ package StringAndStringBuilder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 //https://leetcode.com/problems/count-items-matching-a-rule/
 public class MatchRule {
     static int matchRule(List<List<String>> list, String ruleKey, String ruleValue) {
@@ -20,8 +21,9 @@ public class MatchRule {
         }
         return count;
     }
+
     public static void main(String[] args) {
-        String ruleKey ="name";
+        String ruleKey = "name";
         String ruleValue = "lenovo";
         List<List<String>> list = new ArrayList<>();
         List<String> l1 = Arrays.asList("phone", "blue", "pixel");
@@ -31,7 +33,7 @@ public class MatchRule {
         list.add(l2);
         list.add(l3);
 
-        System.out.println(matchRule(list,ruleKey,ruleValue));
+        System.out.println(matchRule(list, ruleKey, ruleValue));
 
     }
 
