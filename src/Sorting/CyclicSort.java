@@ -24,7 +24,8 @@ public class CyclicSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2, 5, 1, 6, 3, 4};
+//        int[] arr = {2, 5, 1, 6, 3, 4};
+        int[] arr = {1, 2, 3, 2, 5, 6};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
